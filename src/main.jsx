@@ -9,6 +9,5 @@ export const createRoot = ViteReactSSG(
   ({ router, routes, isClient, initialState }) => {
     // do something.
    
-  },
-  {includedRoutes: () => ['/', '/a'], format: 'directory'}
+  }
 )
