@@ -7,7 +7,7 @@
     "dev": "vite-react-ssg dev",
     "build": "vite-react-ssg build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite-react-ssg preview"
   },
   "dependencies": {
     "react": "^19.1.0",
