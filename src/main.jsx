@@ -8,5 +8,6 @@ export const createRoot = ViteReactSSG(
   // function to have custom setups
   ({ router, routes, isClient, initialState }) => {
     // do something.
+    includedRoutes: () => ['/', '/a']
   },
 )
