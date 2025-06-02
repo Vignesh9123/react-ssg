@@ -1,18 +1,24 @@
-import { useState } from 'react'
-
 import './App.css'
 import Home from './pages/Home'
 import AnotherPage from './pages/AnotherPage'
+import Layout from './Components/Layout'
 
 
 export const routes = [
   {
     path: '/',
-    element: <Home />
-  },
-  {
-    path: '/a',
-    element: <AnotherPage />
+    element: <Layout/>,
+    entry:'src/Components/Layout.jsx',
+    children: [
+      {
+        element: <Home />,
+        index: true
+      },
+      {
+        path: 'a',
+        element: <AnotherPage />
+      }
+    ]
   }
 ] 
 
